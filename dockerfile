@@ -8,9 +8,6 @@ RUN npm install
 
 COPY . .
 
-ENV IP_ADDRESS=0.0.0.0
-ENV PORT=3000
-
-EXPOSE $PORT
+EXPOSE 3000
 
 CMD [ "node", "server.js" ]
